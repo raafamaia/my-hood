@@ -12,6 +12,8 @@
 		58C44FD71D4834B700ADD806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C44FD51D4834B700ADD806 /* Main.storyboard */; };
 		58C44FD91D4834B700ADD806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C44FD81D4834B700ADD806 /* Assets.xcassets */; };
 		58C44FDC1D4834B700ADD806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C44FDA1D4834B700ADD806 /* LaunchScreen.storyboard */; };
+		58C44FE51D48352B00ADD806 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C44FE41D48352B00ADD806 /* Post.swift */; };
+		58C44FEC1D484D8B00ADD806 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C44FEB1D484D8B00ADD806 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		58C44FD81D4834B700ADD806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58C44FDB1D4834B700ADD806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58C44FDD1D4834B700ADD806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C44FE41D48352B00ADD806 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		58C44FEB1D484D8B00ADD806 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		58C44FD01D4834B700ADD806 /* my-hood */ = {
 			isa = PBXGroup;
 			children = (
+				58C44FE61D4841CE00ADD806 /* View */,
+				58C44FE31D48351600ADD806 /* Model */,
 				58C44FD11D4834B700ADD806 /* AppDelegate.swift */,
 				58C44FD31D4834B700ADD806 /* ViewController.swift */,
 				58C44FD51D4834B700ADD806 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				58C44FDD1D4834B700ADD806 /* Info.plist */,
 			);
 			path = "my-hood";
+			sourceTree = "<group>";
+		};
+		58C44FE31D48351600ADD806 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58C44FE41D48352B00ADD806 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		58C44FE61D4841CE00ADD806 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58C44FEB1D484D8B00ADD806 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C44FE51D48352B00ADD806 /* Post.swift in Sources */,
 				58C44FD41D4834B700ADD806 /* ViewController.swift in Sources */,
 				58C44FD21D4834B700ADD806 /* AppDelegate.swift in Sources */,
+				58C44FEC1D484D8B00ADD806 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
