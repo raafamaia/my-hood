@@ -20,18 +20,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-        let post1 = Post(imagePath: "", title: "Title 1", description: "description post 1")
-        let post2 = Post(imagePath: "", title: "Title 1", description: "description post 1")
-        let post3 = Post(imagePath: "", title: "Title 1", description: "description post 1")
+        posts.append(Post(imagePath: "", title: "Title 1", description: "description post 1"))
+        posts.append(Post(imagePath: "", title: "Title 2", description: "description post 2"))
+        posts.append(Post(imagePath: "", title: "Title 3", description: "description post 3"))
         
-        posts.append(post1)
-        posts.append(post2)
-        posts.append(post3)
-//        
-//        posts.append(Post(imagePath: "", title: "Title 1", description: "description post 1"))
-//        posts.append(Post(imagePath: "", title: "Title 2", description: "description post 2"))
-//        posts.append(Post(imagePath: "", title: "Title 3", description: "description post 3"))
-//        
         tableView.reloadData()
     }
 

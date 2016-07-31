@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		585141661D4EB38C000387AB /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585141651D4EB38C000387AB /* AddPostVC.swift */; };
 		58C44FD21D4834B700ADD806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C44FD11D4834B700ADD806 /* AppDelegate.swift */; };
 		58C44FD41D4834B700ADD806 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C44FD31D4834B700ADD806 /* ViewController.swift */; };
 		58C44FD71D4834B700ADD806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C44FD51D4834B700ADD806 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		585141651D4EB38C000387AB /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 		58C44FCE1D4834B700ADD806 /* my-hood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C44FD11D4834B700ADD806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58C44FD31D4834B700ADD806 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		585141641D4EB34F000387AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58C44FD31D4834B700ADD806 /* ViewController.swift */,
+				585141651D4EB38C000387AB /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		58C44FC51D4834B700ADD806 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +69,11 @@
 		58C44FD01D4834B700ADD806 /* my-hood */ = {
 			isa = PBXGroup;
 			children = (
+				585141641D4EB34F000387AB /* Controller */,
 				58C44FE61D4841CE00ADD806 /* View */,
 				58C44FE31D48351600ADD806 /* Model */,
 				58C44FD11D4834B700ADD806 /* AppDelegate.swift */,
-				58C44FD31D4834B700ADD806 /* ViewController.swift */,
-				58C44FD51D4834B700ADD806 /* Main.storyboard */,
 				58C44FD81D4834B700ADD806 /* Assets.xcassets */,
-				58C44FDA1D4834B700ADD806 /* LaunchScreen.storyboard */,
 				58C44FDD1D4834B700ADD806 /* Info.plist */,
 			);
 			path = "my-hood";
@@ -81,6 +90,8 @@
 		58C44FE61D4841CE00ADD806 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				58C44FD51D4834B700ADD806 /* Main.storyboard */,
+				58C44FDA1D4834B700ADD806 /* LaunchScreen.storyboard */,
 				58C44FEB1D484D8B00ADD806 /* PostCell.swift */,
 			);
 			name = View;
@@ -160,6 +171,7 @@
 			files = (
 				58C44FE51D48352B00ADD806 /* Post.swift in Sources */,
 				58C44FD41D4834B700ADD806 /* ViewController.swift in Sources */,
+				585141661D4EB38C000387AB /* AddPostVC.swift in Sources */,
 				58C44FD21D4834B700ADD806 /* AppDelegate.swift in Sources */,
 				58C44FEC1D484D8B00ADD806 /* PostCell.swift in Sources */,
 			);
@@ -313,6 +325,7 @@
 				58C44FE21D4834B700ADD806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,7 +16,9 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        imageCell.layer.cornerRadius = imageCell.frame.size.width / 2
+        imageCell.clipsToBounds = true
     }
 
     func configureCell(post: Post){
