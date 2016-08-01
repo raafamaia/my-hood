@@ -24,6 +24,7 @@ class PostCell: UITableViewCell {
     func configureCell(post: Post){
         titleLabel.text = post.title
         descLabel.text = post.postDesc
+        imageCell.image = DataService.instance.imageForPath(post.imagePath)
     }
 
 }
